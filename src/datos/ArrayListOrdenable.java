@@ -13,13 +13,18 @@ public class ArrayListOrdenable extends ArrayList<Ordenable> {
 	public boolean add(Ordenable e) {
 //		Recorro el array y busca en que posición colocarlo
 //		la condicion es que la i sea menor que el tamaño del array
-		for(int i=0;i<this.size();i++){
+		
+		boolean encontrado = false; //creo un booleano para salir del bucle. 
+		boolean ret = false; 
+		for(int i=0;!encontrado && i<this.size();i++){
 //			Tiene que obtener el valor del elemento que le estamos pasando.
 			if(this.get(i).ordena(e) == Ordenable.Tipo.MAYOR){
 //				En el momento que encontremos el mayor lo ponemos en esa posición.
 				this.add(i,e); 
-				break; //una vez encontrado lo rompo con el break
+				encontrado=true; //una vez encontrado lo rompo con el boolean ; 
+				ret = true; 
 			}
 		}
+		return ret; 
 	}
 }
