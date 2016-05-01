@@ -1,5 +1,6 @@
 package Consola;
 
+import datos.Perro;
 import datos.Producto;
 
 public class App {
@@ -9,6 +10,9 @@ public class App {
 		Producto p1 = new Producto(1, "Producto1", 1.00);
 		Producto p2 = new Producto(2, "Producto2", 2.00);
 		
-		System.out.println(p1.ordena(p2));
+		//si declaro un perro
+		Perro miPerro = new Perro(1,"Perro1"); 
+		
+		System.out.println(p1.ordena(miPerro));
 	}
 }
