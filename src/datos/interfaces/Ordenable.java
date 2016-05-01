@@ -14,7 +14,7 @@ public interface Ordenable {
 	
 //	Los metodos son public(accesible desde todas partes) abstract (sin codigo):
 	enum Tipo { MENOR, IGUAL, MAYOR, INDEFINIDO }; 
-	Tipo ordena(Object o); //nos indica si es MENOR, IGUAL o MAYOR
+	Tipo ordena(Ordenable o); //nos indica si es MENOR, IGUAL o MAYOR
 	int getValor(); //nos da el valor almacenado
 	void setValor(int valor); 
 }

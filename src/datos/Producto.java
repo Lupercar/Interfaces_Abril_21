@@ -52,7 +52,7 @@ public class Producto implements Ordenable {
 	}
 
 	@Override
-	public Tipo ordena(Object o) {
+	public Tipo ordena(Ordenable o) {
 		// Comparara el precio del objeto donde estamos con el precio del que le
 		// pasamos y devuelve
 		// MENOR si this.precio es más pequeño que o.precio.
