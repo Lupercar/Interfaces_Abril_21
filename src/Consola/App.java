@@ -13,6 +13,6 @@ public class App {
 		//si declaro un perro
 		Perro miPerro = new Perro(1,"Perro1"); 
 		
-		System.out.println(p1.ordena(miPerro));
+		System.out.println(p1.ordena(p2));
 	}
 }
