@@ -65,10 +65,10 @@ public class Producto implements Ordenable {
 		if (o instanceof Producto) {
 			// creo una variable de tipo Producto llamado otro y se la asigno al
 			// casting de o que es un object
-			Producto otro = (Producto) o;
-			if (this.getPrecio() < otro.getPrecio())
+//			Producto otro = (Producto) o;
+			if (this.getValor() < o.getValor())
 				ret = Tipo.MENOR;
-			else if (this.getPrecio() == otro.getPrecio())
+			else if (this.getValor() == o.getValor())
 				ret = Tipo.IGUAL;
 			else
 				ret = Tipo.MAYOR;
