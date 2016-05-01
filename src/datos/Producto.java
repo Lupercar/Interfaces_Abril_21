@@ -91,14 +91,18 @@ public class Producto implements Ordenable {
 
 	//métodos de object sobreescritos
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// TODO Auto-generated method stub
+	public Object clone() throws CloneNotSupportedException {
+//		Permite hacer un clon devuelve un objeto nuevo 
+//		con el mismo contenido que el original. 
+//		Para que funcione, tiene que implementar la interfaz Cloneable
 		return super.clone();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
+//		Definimos la condicion por la que consideramos
+//		dos objetos iguales, por ejemplo mismo codigo de Producto
+//		o mismo nombre, lo que nosotros consideremos. 
 		return super.equals(obj);
 	}
 
@@ -110,7 +114,9 @@ public class Producto implements Ordenable {
 
 	@Override
 	public int hashCode() {
-		// TODO Auto-generated method stub
+		// Contiene un entero que identifica este objeto
+//		si el objeto es igual a otro, tienen que tener el mismo
+//		valor de hash, tiene relación con el método equals()
 		return super.hashCode();
 	}
 
