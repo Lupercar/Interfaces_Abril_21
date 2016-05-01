@@ -89,7 +89,7 @@ public class Producto implements Ordenable, Cloneable {
 		this.setPrecio(valor);
 	}
 
-	//métodos de object sobreescritos
+	//METODOS DE OBJECT SOBREESCRITOS
 	@Override
 	public Object clone() throws CloneNotSupportedException {
 //		Permite hacer un clon devuelve un objeto nuevo 
@@ -108,7 +108,9 @@ public class Producto implements Ordenable, Cloneable {
 
 	@Override
 	protected void finalize() throws Throwable {
-		// TODO Auto-generated method stub
+//		Metodo destructor del objeto, es llamado por el recolector
+//		de basura cuando se destruye el objeto. 
+//		No sabemos cuando va a ser.
 		super.finalize();
 	}
 
@@ -122,7 +124,7 @@ public class Producto implements Ordenable, Cloneable {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+//		Personaliza la conversion a String del objeto 
 		return super.toString();
 	}
 
