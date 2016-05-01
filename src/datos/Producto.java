@@ -6,7 +6,7 @@ package datos;
 
 import datos.interfaces.Ordenable;
 
-public class Producto implements Ordenable {
+public class Producto implements Ordenable, Cloneable {
 	/*
 	 * Para que sea un JavaBean tiene que tener propiedades privadas,
 	 * constructor sin parámetros y getter-setter públicos.
