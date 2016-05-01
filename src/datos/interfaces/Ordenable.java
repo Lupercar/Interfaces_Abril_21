@@ -13,8 +13,8 @@ public interface Ordenable {
 	public static final double PI = 3.14;
 	
 //	Los metodos son public(accesible desde todas partes) abstract (sin codigo):
-	enum Tipo { MENOR, IGUAL, MAYOR }; 
+	enum Tipo { MENOR, IGUAL, MAYOR, INDEFINIDO }; 
 	Tipo ordena(Object o); //nos indica si es MENOR, IGUAL o MAYOR
 	int getValor(); //nos da el valor almacenado
-	void setValor(); 
+	void setValor(int valor); 
 }
